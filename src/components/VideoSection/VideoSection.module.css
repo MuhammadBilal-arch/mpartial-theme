@@ -1,0 +1,100 @@
+
+  .VideoSection{
+    width:100%;
+    height:700px; 
+    overflow: hidden;
+    object-fit: contain; 
+  }
+  
+  .VideoContainer{
+      content: '';
+      position: absolute ;
+      left: 0;
+      top: -50px;
+      width: 100%; 
+      height: auto; 
+      object-fit: contain;
+    }
+  
+    .Mouse {
+      content: '';
+      position: absolute;
+      width:30px;
+      height: 45px;
+      top: 85%;
+      left: 48%;
+      background-color: transparent;
+      border: 2px solid black;
+      border-radius: 15px 15px 15px 15px;
+      z-index: 1;
+      transition: 0.5s;
+    }
+  
+    .Mouse:before {
+      content: '';
+      position: absolute; 
+      height: 10px;
+      top: 10%;
+      left: 49.2%;
+      border: 1px solid black; 
+      z-index: 1;
+      transition: 0.5s;
+    }
+    
+    .Mouse:hover:before{
+      top:60%;
+      border-color: #3AC280;
+    }
+  
+    .Mouse:hover
+    {
+      border-color: #3AC280;
+    }
+  
+    .videotext{
+      width: 450px;
+      background-color: transparent; 
+      color: white;
+      font-size: 35px;
+      text-align: center;
+      z-index: 1;
+    }
+  
+    .videotextcontainer{
+      content: '';
+      position: absolute;
+      width:100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;    
+    }
+  
+    @media only screen and (max-width: 1150px) {
+      .Mouse{
+        top: 70%;
+      }
+    }
+  
+    @media only screen and (max-width: 800px) {
+      .Mouse{
+        display: none;
+      }
+      .videotext{
+        font-size: auto;
+      }
+      .videotextcontainer{
+        top:0;
+        height: 250px;
+      }
+      .VideoContainer{
+        content: '';
+        position: absolute ;
+        left: 0;
+        top: 0px;
+        width: 100%; 
+        height: auto; 
+        object-fit: contain;
+      }
+    }
+  
