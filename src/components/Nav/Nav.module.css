@@ -20,12 +20,15 @@
 }
 
 .showUL {
-  padding: 18px 0px;
+  padding: 10px 0px;
   width: 64%;
+  margin: 0;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 13px;
+  /* background-color: red; */
 }
 
 .Navbutton {
@@ -39,7 +42,9 @@
   transition: 0.5s;
   text-align: center;
 }
-
+.showUL li a:hover{
+  color: #3ac280;
+}
 .Navbar ul li a:hover {
   color: #3ac280;
 }

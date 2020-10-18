@@ -5,6 +5,7 @@ import { Nav } from './components/Nav/Nav'
 import { HowItWork } from './components/HowItWork/HowItWork'
 import { Form } from './components/Contact/Form'
 import { Footer } from './components/Footer/Footer'
+import { FeeStructure } from './components/FeeStructure/FeeStructure'
 function App() {
 
   const [navColor, setnavColor] = useState({bgcolor : 'transparent', textcolor: 'white'})
@@ -25,6 +26,7 @@ function App() {
       <Nav NcolorBG={navColor.bgcolor} NtextColor={navColor.textcolor} />
       <VideoSection />
       <HowItWork />
+      <FeeStructure/>
       <Form/>
       <Footer/>
     </div>

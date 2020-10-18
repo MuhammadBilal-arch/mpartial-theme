@@ -45,27 +45,23 @@
   justify-content: space-between;
   flex-direction: column;
   width: 95%;
-  height: 200px;
-  /* margin-bottom: 50px; */
+  height: 250px;
 }
-
-.FormInputs label {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.5);
-  margin-top: -35px;
-  margin-left: 40px;
-  font-weight: bold;
-  width: 100px;
+.Wrapper{
+  position: relative;
+}
+.Wrapper label{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  font-size: 20px;
+  z-index: 2;
   background-color: white;
   transition: 0.5s;
 }
 
-.FormInputs input:focus + label {
-  margin-top: -60px;
-  margin-left: 30px;
+.Wrapper input:focus + label {
+  top:-10px;
   font-size: 12px;
 }
 
@@ -92,28 +88,40 @@
   border-radius: 10px;
   outline: none;
   width: 95%;
+  padding: 20px 40px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  height: 180px;
+  height: 220px;
   resize: none;
 }
 
-.FormTextArea label{
+.FormTextArea label {
   position: absolute;
   left: 50px;
   top: 10px;
- font-size: 20px;
+  font-size: 20px;
+  /* width: 200px; */
+  background-color: white;
+  transition: 0.5s;
+  z-index: 2;
 }
 
-.ChiWButton{
+.FormTextArea textarea:focus + label {
+  margin-top: -20px;
+  margin-left: 20px;
+  font-size: 12px;
+  /* width: 120px; */
+}
+
+.ChiWButton {
   margin-top: 50px;
   border-radius: 20px;
-  background-color:  #3AC280;
+  background-color: #3ac280;
   outline: none;
   border: none;
   color: white;
   width: 140px;
   height: 40px;
-  text-align: center; 
+  text-align: center;
   transition: 0.5s;
 }
 

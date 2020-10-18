@@ -3,7 +3,7 @@ import classes from "./Form.module.css";
 
 export const Form = () => {
   return (
-    <div className={classes.FormSection}>
+    <div className={classes.FormSection} id= 'Contact-US'>
       <div className={classes.ChiwHeading}>Contact Us</div>
       <form>
         <div className={classes.FormInputs}>

@@ -20,7 +20,7 @@ export const HowItWork = () => {
     },
   ]);
   return (
-    <div className={classes.HowItWorkSection}>
+    <div className={classes.HowItWorkSection} id='How-It-Works'>
       <div className = {classes.hiwHeading}>How it Works</div>
       <HiwChild data={text} />
       <button className={classes.hiWButton}>Get Started</button>
