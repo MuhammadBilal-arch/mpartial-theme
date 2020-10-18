@@ -1,34 +1,125 @@
-.FormSection{
-    /* background-color: red; */
-    width:100%;
-    z-index: 3;
-    padding:100px 100px;
-    text-align: center;
+.FormSection {
+  width: 100%;
+  z-index: 3;
+  padding: 100px 100px;
+  text-align: center;
 }
 
-.ChiwHeading{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left:0;
-    top: 0;
-    font-size:42px;
-    font-weight: bold;
-    z-index: 1;
-    margin-bottom:50px;
+.ChiwHeading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  font-size: 42px;
+  font-weight: bold;
+  z-index: 1;
+  margin-bottom: 50px;
 }
 
-.ChiwHeading:before{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0.1;
-    margin:auto;
-    margin-top:-70px;
-    margin-left:5px;
-    background-image: url('./Blue_circle.png');
-    background-position: center;
-    background-size: contain;
-    z-index: 100%;
+.ChiwHeading:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.1;
+  margin: auto;
+  margin-top: -70px;
+  margin-left: 5px;
+  background-image: url("./Blue_circle.png");
+  background-position: center;
+  background-size: contain;
+  z-index: 100%;
+}
+
+.FormSection form {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.FormInputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 95%;
+  height: 200px;
+  /* margin-bottom: 50px; */
+}
+
+.FormInputs label {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: -35px;
+  margin-left: 40px;
+  font-weight: bold;
+  width: 100px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.FormInputs input:focus + label {
+  margin-top: -60px;
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.Wrapper {
+  height: 100%;
+}
+
+.FormInputs input {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  height: 50px;
+  padding: 0px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.FormTextArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.FormTextArea textarea {
+  border-radius: 10px;
+  outline: none;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 180px;
+  resize: none;
+}
+
+.FormTextArea label{
+  position: absolute;
+  left: 50px;
+  top: 10px;
+ font-size: 20px;
+}
+
+.ChiWButton{
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color:  #3AC280;
+  outline: none;
+  border: none;
+  color: white;
+  width: 140px;
+  height: 40px;
+  text-align: center; 
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1050px) {
+  .FormSection form {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

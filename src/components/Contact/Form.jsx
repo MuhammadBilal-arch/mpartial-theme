@@ -6,20 +6,28 @@ export const Form = () => {
     <div className={classes.FormSection}>
       <div className={classes.ChiwHeading}>Contact Us</div>
       <form>
-        <div>
-          <label htmlFor="name">Your Name</label>
-          <input type="text" id="name" />
+        <div className={classes.FormInputs}>
+          <div className={classes.Wrapper}>
+            <input type="text" id="name" />
+            <label htmlFor="name">Your Name</label>
+          </div>
 
-          <label htmlFor="email">Email</label>
-          <input type="text" id="email" />
+          <div className={classes.Wrapper}>
+            <input type="text" id="email" />
+            <label htmlFor="email">Email</label>
+          </div>
 
-          <label htmlFor="">Cell</label>
-          <input type="text" id="cell" />
+          <div className={classes.Wrapper}>
+            <input type="text" id="cell" />
+            <label htmlFor="">Cell</label>
+          </div>
         </div>
-        <div>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div className={classes.FormTextArea}>
+          <textarea name="" id="textarea"></textarea>
+          <label htmlFor="textarea">Write your message...</label>
         </div>
       </form>
+      <button className = {classes.ChiWButton}>Submit</button>
     </div>
   );
 };
