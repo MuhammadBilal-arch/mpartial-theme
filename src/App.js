@@ -4,6 +4,7 @@ import { VideoSection } from './components/VideoSection/VideoSection'
 import { Nav } from './components/Nav/Nav'
 import { HowItWork } from './components/HowItWork/HowItWork'
 import { Form } from './components/Contact/Form'
+import { Footer } from './components/Footer/Footer'
 function App() {
 
   const [navColor, setnavColor] = useState({bgcolor : 'transparent', textcolor: 'white'})
@@ -25,6 +26,7 @@ function App() {
       <VideoSection />
       <HowItWork />
       <Form/>
+      <Footer/>
     </div>
   );
 }

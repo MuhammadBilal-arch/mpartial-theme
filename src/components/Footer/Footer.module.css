@@ -1,0 +1,15 @@
+.Footer{
+    width:100%;
+    height:100px;
+    background-color: #0a5169;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    color: gainsboro;
+}
+
+.contactIcon a i{
+    padding:0px 10px;
+    cursor: pointer;
+    color: gainsboro;
+}
