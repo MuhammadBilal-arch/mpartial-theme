@@ -3,6 +3,7 @@ import './App.css';
 import { VideoSection } from './components/VideoSection/VideoSection'
 import { Nav } from './components/Nav/Nav'
 import { HowItWork } from './components/HowItWork/HowItWork'
+import { Form } from './components/Contact/Form'
 function App() {
 
   const [navColor, setnavColor] = useState({bgcolor : 'transparent', textcolor: 'white'})
@@ -23,6 +24,7 @@ function App() {
       <Nav NcolorBG={navColor.bgcolor} NtextColor={navColor.textcolor} />
       <VideoSection />
       <HowItWork />
+      <Form/>
     </div>
   );
 }

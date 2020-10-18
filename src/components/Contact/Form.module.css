@@ -1,0 +1,34 @@
+.FormSection{
+    /* background-color: red; */
+    width:100%;
+    z-index: 3;
+    padding:100px 100px;
+    text-align: center;
+}
+
+.ChiwHeading{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    font-size:42px;
+    font-weight: bold;
+    z-index: 1;
+    margin-bottom:50px;
+}
+
+.ChiwHeading:before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.1;
+    margin:auto;
+    margin-top:-70px;
+    margin-left:5px;
+    background-image: url('./Blue_circle.png');
+    background-position: center;
+    background-size: contain;
+    z-index: 100%;
+}

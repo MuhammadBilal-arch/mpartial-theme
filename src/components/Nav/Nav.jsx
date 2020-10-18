@@ -28,7 +28,7 @@ export const Nav = ({NcolorBG , NtextColor}) => {
         <span></span>
         </div>        
         </nav>
-                <ul className = {openMenu ? classes.showMenu : false}>
+            <ul className = {openMenu ? classes.showMenu : classes.HideshowMenu}>
                 <li><a href='#item-1' alt='' style={{color: "black"}}>Ground-Truth Data</a></li>
                 <li><a href='#item-2' alt='' style={{color: "black"}}>How its Works</a></li>
                 <li><a href='#item-3' alt='' style={{color: "black"}}>Fee Structure</a></li>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./HIW.module.css";
-import HiwChild from "./hiwChild";
+import HiwChild from "./hiwChild"; 
 export const HowItWork = () => {
   const [text] = useState([
     {
