@@ -26,17 +26,17 @@ export const Nav = ({NcolorBG , NtextColor}) => {
         <span></span>
         <span></span>
         <span></span>
-        </div>        
+        </div>
+        <ul className = {openMenu ? classes.showMenu : classes.HideshowMenu}>
+                     <li><a href='#Ground-Truth-Data' alt='' >Ground-Truth Data</a></li>
+                     <li><a href='#How-It-Works' alt='' >How its Works</a></li>
+                     <li><a href='#Fee-Structure' alt='' >Fee Structure</a></li>
+                     <li><a href='#Example-Deliverables' alt='' >Example Deliverables</a></li>
+                     <li><a href='#login' alt='' >Submission Portal</a></li>
+                     <li><a href='#Contact-US' alt=''>Contact Us</a></li>
+                     <li><button className={classes.Navbutton}>Sign In</button></li>
+            </ul>        
         </nav>
-            <ul className = {openMenu ? classes.showMenu : classes.HideshowMenu}>
-                <li><a href='#item-1' alt='' style={{color: "black"}}>Ground-Truth Data</a></li>
-                <li><a href='#item-2' alt='' style={{color: "black"}}>How its Works</a></li>
-                <li><a href='#item-3' alt='' style={{color: "black"}}>Fee Structure</a></li>
-                <li><a href='#item-4' alt='' style={{color: "black"}}>Example Deliverables</a></li>
-                <li><a href='#item-5' alt='' style={{color: "black"}}>Submission Portal</a></li>
-                <li><a href='#item-2' alt='' style={{color: "black"}}>Contact Us</a></li>
-                <li><button className={classes.Navbutton}>Sign In</button></li>
-            </ul>
         </>
 )
 }

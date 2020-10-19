@@ -70,14 +70,21 @@
     display: none;
   }
 
+  .showMenu li a{
+    color: black;
+  }
   .showMenu{
-    margin-top: 60px;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top:60px;
+    /* margin-top: 60px; */
     display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     z-index: 100;
   }
   .showMenu li{

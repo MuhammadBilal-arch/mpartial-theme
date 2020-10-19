@@ -54,16 +54,13 @@
   }
 
   .carousel{
-    width:500px;
+    width:700px;
     margin: 50px auto;
-    color:red;
-    font-size: 42px;
   }
 
 
 .EDVideoS2{
     margin-top:25px;
-    /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,18 +71,18 @@
   width:90%;
   height: 100%;
   object-fit: contain;
-  margin-top:25px;
 }
+
 .EDVideo_1S2 {
 
-    width:90%;
+    width:100%;
     height: 100%;
     object-fit: contain;
 }
 
 .EDVideo_2S2 img , .EDVideo_1S2 img
 {
-  width:100%;
+  width:96%;
   height:100%;
   object-fit: contain;
 }
@@ -114,9 +111,10 @@ border-bottom:3px solid black;
   }
   .EDVideo_1S2 , .EDVideo_2S2{
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .carousel{
-    display: none;
+    width:auto;
   }
 }
