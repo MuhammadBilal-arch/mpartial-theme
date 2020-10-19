@@ -2,6 +2,7 @@
   width: 100%;
   z-index: 3;
   padding: 100px 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -129,5 +130,12 @@
   .FormSection form {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .FormSection{
+    padding: 50px 25px;
   }
 }

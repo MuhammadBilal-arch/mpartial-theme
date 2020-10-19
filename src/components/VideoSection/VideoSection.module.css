@@ -90,3 +90,12 @@
       }
     }
   
+    @media only screen and (max-width: 415px) {
+      .Mouse{
+        display: none;
+      }
+      .videotext{
+        font-size: 16px;
+      }
+    }
+  

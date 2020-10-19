@@ -14,27 +14,8 @@
     text-align: justify;
 }
 
-.HiwCard h1{
-    font-size: 170px; 
-}
-.ImageSet{
-    background-image: url('./blue-circleF.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    margin-top: -100px;
-    opacity: 0.1;
-    
-}
-.HiwCard div{
-    padding:100px 0px 0px 0px;
-    color:black;
-}
-.HiwCardContainer{
-    display: flex;    
-}
 
-.hiwHeading{
+.ImageSet{
     position: relative;
     width: 100%;
     height: 100%;
@@ -44,21 +25,32 @@
     font-weight: bold;
     z-index: 1;
     margin-bottom:50px;
+    font-size: 170px;
 }
 
-.hiwHeading:before{
+.ImageSet:before{
     content: '';
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0.1;
     margin:auto;
-    margin-top:-70px;
-    margin-left:40px;
-    background-image: url('./Blue_circle.png');
-    background-position: center;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./blue-circleF.png');
+    background-position: bottom;
     background-size: contain;
-    z-index: 100%;
+    z-index: -1;
+}
+
+.HiwCard div{
+    padding:100px 0px 0px 0px;
+    color:black;
+}
+.HiwCardContainer{
+    display: flex;    
 }
 
 .hiWButton{
@@ -87,4 +79,32 @@
         height: 100%;
     }
 
+}
+
+@media only screen and (max-width: 450px) {
+    .HiwCard{
+        flex-direction: column;        
+    }   
+    .ImageSet{
+        padding: 0;
+        margin: 0 ;
+        text-align: center;
+        overflow: hidden;
+    }
+    .ImageSet:before{
+        width:100%;
+        height: 100%;
+        top:120px;
+        text-align: center;
+        background-image: url('./blue-circleF.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        opacity: 0.1;        
+        overflow: hidden;
+    }
+    .HiwCard div{
+        padding: 0;
+        text-align: center;
+    }   
 }

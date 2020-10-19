@@ -1,10 +1,11 @@
 import React from "react";
 import classes from "./Form.module.css";
+import { HeadComp } from '../ReuseAbleComponents/HeadComp'
 
 export const Form = () => {
   return (
     <div className={classes.FormSection} id= 'Contact-US'>
-      <div className={classes.ChiwHeading}>Contact Us</div>
+      <HeadComp text = 'Contact Us'></HeadComp>
       <form>
         <div className={classes.FormInputs}>
           <div className={classes.Wrapper}>

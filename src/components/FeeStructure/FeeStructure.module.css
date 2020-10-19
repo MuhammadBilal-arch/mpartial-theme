@@ -1,40 +1,12 @@
 .FeeStructureSection{
     /* width:100%; */
+    margin-top: 50px;
     z-index: 3;
     padding:150px 100px;
     text-align: center;
 }
 
-.FShiwHeading{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left:0;
-    top: 0;
-    font-size:42px;
-    font-weight: bold;
-    z-index: 1;
-    margin-bottom:50px;
-}
-
-.FShiwHeading:before{
-    content: '';
-    position: absolute;
-    top: -65px;
-    left: 0;
-    right:0;
-    width: 200px;
-    height: 200px;
-    opacity: 0.1;
-    margin:auto;
-    background-image: url('./Blue_circle.png');
-    background-position: center;
-    background-size: contain;
-    z-index: 100%;
-}
-
 .FeeShow{
-
     padding:100px 0px;
 }
 
@@ -77,4 +49,11 @@ i{
     width:22px;
     height: auto;
     border: 1px solid gainsboro;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .FeeStructureSection{
+        padding:50px 25px;
+    }   
 }

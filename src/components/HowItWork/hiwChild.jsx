@@ -7,7 +7,7 @@ const hiwChild = ({ data }) => {
       {data.map((item, index) => {
         return (
           <div key={index} className={classes.HiwCard}>
-            <h1>{item.ID}<div className = {classes.ImageSet}></div></h1>
+            <h1 className = {classes.ImageSet}>{item.ID}</h1>
             <div>{item.p}</div>
           </div>
         );

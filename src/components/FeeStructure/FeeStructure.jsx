@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./FeeStructure.module.css";
+import { HeadComp } from '../ReuseAbleComponents/HeadComp'
 import { Slider, Tooltip } from "antd";
 
 const marks = {
@@ -15,7 +16,7 @@ const marks = {
 export const FeeStructure = () => {
   return (
     <div className={classes.FeeStructureSection} id="Fee-Structure">
-      <div className={classes.FShiwHeading}>Waterfall Fee Structure</div>
+      <HeadComp text = 'Waterfall Fee Structure'/>
       <div className={classes.FeeShow}>
         <Slider marks={marks} defaultValue={0} />
         <div className={classes.FeeShowdata}>

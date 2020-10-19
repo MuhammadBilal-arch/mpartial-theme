@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./HIW.module.css";
 import HiwChild from "./hiwChild"; 
+import { HeadComp } from '../ReuseAbleComponents/HeadComp'
 export const HowItWork = () => {
   const [text] = useState([
     {
@@ -21,7 +22,7 @@ export const HowItWork = () => {
   ]);
   return (
     <div className={classes.HowItWorkSection} id='How-It-Works'>
-      <div className = {classes.hiwHeading}>How it Works</div>
+      <HeadComp  text = 'How it Works'></HeadComp>
       <HiwChild data={text} />
       <button className={classes.hiWButton}>Get Started</button>
     </div>

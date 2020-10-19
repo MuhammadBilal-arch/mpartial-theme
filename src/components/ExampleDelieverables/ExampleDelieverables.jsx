@@ -1,14 +1,15 @@
 import React from "react";
 import classes from "./ExampleDelieverables.module.css";
 import { SliderFunc } from "./Slider/slider";
-
+import { HeadComp } from '../ReuseAbleComponents/HeadComp'
 import BuildingImg1 from "./building2.png";
 import BuildingImg2 from "./building1.png";
 
 export const ExampleDelieverables = () => {
   return (
     <div className={classes.EDSection} id="Example-Deliverables">
-      <div className={classes.EDhiwHeading}>Example Deliverables</div>
+      <HeadComp text = 'Example Deliverables'></HeadComp>
+      
       <h1>
         Pre-Mitigation Scan + Post-Mitigation Scan = ESX & SKX (TrueSketch PLUS)
       </h1>

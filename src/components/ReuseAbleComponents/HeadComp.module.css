@@ -1,0 +1,40 @@
+.hiwHeading{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    font-size:42px;
+    font-weight: bold;
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.hiwHeading:before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.1;
+    margin:auto;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./Blue_circle.png');
+    background-position: center;
+    background-size: contain;
+    z-index: 100%;
+}
+
+
+@media only screen and (max-width: 415px) {
+    .hiwHeading{
+        font-size: 24px;
+    }
+    .hiwHeading:before{
+        width: 150px;
+        height: 150px;
+    }
+  }

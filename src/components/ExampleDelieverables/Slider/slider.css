@@ -1,5 +1,5 @@
 .carousel{
-    width:700px;
+    width:auto;
     margin: 50px auto;
 }
 
@@ -9,6 +9,7 @@
 }
 
 .slick-next:before, .slick-prev:before{
-    width:100px;
-    height:100px;
-}
+     background-color: black;
+     border-radius: 100%;
+     border: none;
+    }
