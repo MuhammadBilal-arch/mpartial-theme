@@ -4,7 +4,7 @@
     background-color: #0a5169;
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px;
+    padding: 30px 50px;
     color: gainsboro;
 }
 
@@ -12,4 +12,17 @@
     padding:0px 10px;
     cursor: pointer;
     color: gainsboro;
+}
+
+@media only screen and (max-width: 450px) {
+    .Footer{
+        padding: 10px 5px;
+        margin: 0;
+    }
+    .Footer div{
+        font-size:12px;
+    }
+    .contactIcon a i {
+        padding: 0px 2px;
+    }
 }
