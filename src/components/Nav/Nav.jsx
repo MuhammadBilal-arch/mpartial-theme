@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classes from './Nav.module.css'
 import Logo from './logo.png'
 export const Nav = ({NcolorBG , NtextColor}) => {
-
+    const [LoginPage, setLoginPage] = useState(false)
     const [openMenu, setopenMenu] = useState(false)
     const OnClickNavButton = () => {
         setopenMenu(openMenu ? false : true);
@@ -13,15 +13,15 @@ export const Nav = ({NcolorBG , NtextColor}) => {
         <nav style={{backgroundColor: NcolorBG }} className={classes.Navbar} >   
          <img src={Logo} alt=''/>
         {
-                <ul className = {classes.showUL}>
-                     <li><a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}><Link to='/'>Ground-Truth Data</Link></a></li>
-                     <li><a href='#How-It-Works' alt='' style={{color: NtextColor}}><Link to='/'>How its Works</Link></a></li>
-                     <li><a href='#Fee-Structure' alt='' style={{color: NtextColor}}><Link to='/'k>Fee Structure</Link></a></li>
-                     <li><a href='#Example-Deliverables' alt='' style={{color: NtextColor}}><Link to='/'>Example Deliverables</Link></a></li>
-                     <li><Link to='/login'  style={{color: NtextColor}}>Submission Portal</Link></li>
-                     <li><a href='#Contact-US' alt='' style={{color: NtextColor}}><Link to='/'>Contact Us</Link></a></li>
-                     <li><button className={classes.Navbutton}>Sign In</button></li>
-                 </ul>
+            <ul className = {classes.showUL}>
+                <li>{LoginPage ? <Link to='/'>Ground-Truth Data</Link> :<a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}>Ground-Truth Data</a>}</li>
+                <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>How its Works</Link> :<a href='#How-It-Works' alt='' style={{color: NtextColor}}>How its Works</a>}</li>
+                <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Fee Structure</Link> :<a href='#Fee-Structure' alt='' style={{color: NtextColor}}>Fee Structure</a>}</li>     
+                <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Example Deliverables</Link> :<a href='#Example-Deliverables' alt='' style={{color: NtextColor}}>Example Deliverables</a>}</li>
+                <li onClick = {() => setLoginPage(true)}><Link to='/login'  style={{color: NtextColor}} >Submission Portal</Link></li>
+                <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Contact Us</Link> :<a href='#Contact-US' alt='' style={{color: NtextColor}}>Contact Us</a>}</li>  
+                <li onClick = {() => setLoginPage(true)}><Link to='/login' ><button className={classes.Navbutton}>Sign In</button></Link></li>
+            </ul>
         }
         <div className = {classes.navbarmenu} onClick = {OnClickNavButton}>
         <span></span>
