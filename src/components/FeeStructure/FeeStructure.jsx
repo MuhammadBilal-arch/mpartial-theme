@@ -21,7 +21,7 @@ export const FeeStructure = () => {
         <div className={classes.FeeShowdata}>
           <p>
             Drag the slider around based on what you think it will cost to
-            repair the property. Move forward based on the estimated fee
+            repair the property.<br/> Move forward based on the estimated fee
             structure below.
           </p>
           <div className={classes.FeeShowButton}>

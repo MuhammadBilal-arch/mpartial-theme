@@ -4,6 +4,9 @@ import { Carousel } from "antd";
 import Page1 from './page1.jpg'
 import Page2 from './page2.jpg'
 import Page3 from './page3.jpg'
+
+import BuildingImg1 from './building2.png'
+import BuildingImg2 from './building1.png'
 const contentStyle = {
   height: "500px",
   width: "100%",
@@ -26,8 +29,8 @@ export const ExampleDelieverables = () => {
         <div className={classes.EDVideo_2}></div>
       </div>
       <h1 style={{padding:'25px 0px'}}>Immaculate. Impartial. [ESX]</h1>
-      <div >
-        <Carousel autoplay dots className = {classes.carousel}>
+      <div className = {classes.carousel}>
+        <Carousel autoplay dots >
           <div>
                 <img  style={contentStyle} src= {Page1} alt=''/>
           </div>
@@ -39,6 +42,16 @@ export const ExampleDelieverables = () => {
           </div>
         </Carousel>
       </div>
+      <h1 className = {classes.HeadingUEffect}>TrueSketch PLUS [SKX]</h1>
+      <div className={classes.EDVideoS2}>
+        <div className={classes.EDVideo_1S2}>
+          <img src = {BuildingImg1} alt=''/>
+        </div>
+        <div className={classes.EDVideo_2S2}>
+        <img src = {BuildingImg2} alt=''/>
+        </div>
+      </div>
+
     </div>
   );
 };
