@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import { Route , Switch} from 'react-router-dom';
 import { VideoSection } from './components/VideoSection/VideoSection'
 import { Nav } from './components/Nav/Nav'
 import { HowItWork } from './components/HowItWork/HowItWork'
@@ -7,6 +8,8 @@ import { Form } from './components/Contact/Form'
 import { Footer } from './components/Footer/Footer'
 import { FeeStructure } from './components/FeeStructure/FeeStructure'
 import { ExampleDelieverables } from './components/ExampleDelieverables/ExampleDelieverables'
+import { login } from './components/Login/login'
+
 function App() {
 
   const [navColor, setnavColor] = useState({bgcolor : 'transparent', textcolor: 'white'})
@@ -25,12 +28,16 @@ function App() {
   return (
     <div className="App">
       <Nav NcolorBG={navColor.bgcolor} NtextColor={navColor.textcolor} />
+      {/* <Switch>
+        <Route path='/login' component={login} />
+       </Switch> */}
       <VideoSection />
       <HowItWork />
       <FeeStructure/>
       <ExampleDelieverables/>
       <Form/>
       <Footer/>
+
     </div>
   );
 }

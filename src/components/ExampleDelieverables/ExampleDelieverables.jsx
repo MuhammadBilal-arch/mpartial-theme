@@ -8,7 +8,7 @@ import Page3 from './page3.jpg'
 import BuildingImg1 from './building2.png'
 import BuildingImg2 from './building1.png'
 const contentStyle = {
-  height: "500px",
+  height: "700px",
   width: "100%",
   color: "#fff",
   lineHeight: '160px',
