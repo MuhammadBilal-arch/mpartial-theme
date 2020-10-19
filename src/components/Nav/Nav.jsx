@@ -14,12 +14,12 @@ export const Nav = ({NcolorBG , NtextColor}) => {
          <img src={Logo} alt=''/>
         {
                 <ul className = {classes.showUL}>
-                     <li><a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}>Ground-Truth Data</a></li>
-                     <li><a href='#How-It-Works' alt='' style={{color: NtextColor}}>How its Works</a></li>
-                     <li><a href='#Fee-Structure' alt='' style={{color: NtextColor}}>Fee Structure</a></li>
-                     <li><a href='#Example-Deliverables' alt='' style={{color: NtextColor}}>Example Deliverables</a></li>
+                     <li><a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}><Link to='/'>Ground-Truth Data</Link></a></li>
+                     <li><a href='#How-It-Works' alt='' style={{color: NtextColor}}><Link to='/'>How its Works</Link></a></li>
+                     <li><a href='#Fee-Structure' alt='' style={{color: NtextColor}}><Link to='/'k>Fee Structure</Link></a></li>
+                     <li><a href='#Example-Deliverables' alt='' style={{color: NtextColor}}><Link to='/'>Example Deliverables</Link></a></li>
                      <li><Link to='/login'  style={{color: NtextColor}}>Submission Portal</Link></li>
-                     <li><a href='#Contact-US' alt='' style={{color: NtextColor}}>Contact Us</a></li>
+                     <li><a href='#Contact-US' alt='' style={{color: NtextColor}}><Link to='/'>Contact Us</Link></a></li>
                      <li><button className={classes.Navbutton}>Sign In</button></li>
                  </ul>
         }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { Route , Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { VideoSection } from './components/VideoSection/VideoSection'
 import { Nav } from './components/Nav/Nav'
 import { HowItWork } from './components/HowItWork/HowItWork'
@@ -12,31 +12,32 @@ import { login } from './components/Login/login'
 
 function App() {
 
-  const [navColor, setnavColor] = useState({bgcolor : 'transparent', textcolor: 'white'})
+  const [navColor, setnavColor] = useState({ bgcolor: 'transparent', textcolor: 'white' })
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 100) 
-      {
-        setnavColor({bgcolor: 'white' , textcolor : 'black'})
+      if (window.scrollY > 100) {
+        setnavColor({ bgcolor: 'white', textcolor: 'black' })
       }
-      else
-      {
-        setnavColor({bgcolor: 'transparent' , textcolor : 'white'})
+      else {
+        setnavColor({ bgcolor: 'transparent', textcolor: 'white' })
       }
     });
   }, [])
   return (
     <div className="App">
       <Nav NcolorBG={navColor.bgcolor} NtextColor={navColor.textcolor} />
-      {/* <Switch>
+      <Switch>
+        <Route exact path='/'>
+          <VideoSection />
+          <HowItWork />
+          <FeeStructure />
+          <ExampleDelieverables />
+          <Form />
+          <Footer />
+        </Route>
+
         <Route path='/login' component={login} />
-       </Switch> */}
-      <VideoSection />
-      <HowItWork />
-      <FeeStructure/>
-      <ExampleDelieverables/>
-      <Form/>
-      <Footer/>
+      </Switch>
 
     </div>
   );
