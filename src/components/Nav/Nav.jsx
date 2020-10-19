@@ -14,7 +14,7 @@ export const Nav = ({NcolorBG , NtextColor}) => {
          <img src={Logo} alt=''/>
         {
             <ul className = {classes.showUL}>
-                <li>{LoginPage ? <Link to='/'>Ground-Truth Data</Link> :<a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}>Ground-Truth Data</a>}</li>
+                <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Ground-Truth Data</Link> :<a href='#Ground-Truth-Data' alt='' style={{color: NtextColor}}>Ground-Truth Data</a>}</li>
                 <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>How its Works</Link> :<a href='#How-It-Works' alt='' style={{color: NtextColor}}>How its Works</a>}</li>
                 <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Fee Structure</Link> :<a href='#Fee-Structure' alt='' style={{color: NtextColor}}>Fee Structure</a>}</li>     
                 <li>{LoginPage ? <Link to='/' onClick = {() => setLoginPage(false)}>Example Deliverables</Link> :<a href='#Example-Deliverables' alt='' style={{color: NtextColor}}>Example Deliverables</a>}</li>

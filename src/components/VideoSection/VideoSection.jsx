@@ -3,7 +3,7 @@ import classes from './VideoSection.module.css'
 import videoSrc from '../../video/homepage.mp4'
 export const VideoSection = () => {
   return (
-    <div className= {classes.VideoSection}>
+    <div className= {classes.VideoSection} id = 'Ground-Truth-Data'>
       <video autoPlay playsInline loop muted className={classes.VideoContainer}>
         <source src={videoSrc} type="video/mp4"></source>
       </video>

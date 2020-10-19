@@ -15,7 +15,8 @@ export const login = () => {
         </div>
       </form>
       <button className={classes.LhiWButton}>Sign In</button>
-      <button className={classes.LhiWButton}>Create Account</button>
+      <h5>New to mpartial?</h5>
+      <button className={classes.CLhiWButton}>Create Account</button>
     </div>
   );
 };
