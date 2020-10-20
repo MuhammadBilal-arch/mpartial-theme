@@ -12,20 +12,21 @@ import { login } from './components/Login/login'
 
 function App() {
 
-  const [navColor, setnavColor] = useState({ bgcolor: 'transparent', textcolor: 'white' })
+  const [navColor, setnavColor] = useState(false)
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        setnavColor({ bgcolor: 'white', textcolor: 'black' })
+        setnavColor(true)
       }
       else {
-        setnavColor({ bgcolor: 'transparent', textcolor: 'white' })
+        setnavColor(false)
       }
     });
-  }, [])
+  }, [navColor]);
+
   return (
     <div className="App">
-      <Nav NcolorBG={navColor.bgcolor} NtextColor={navColor.textcolor} />
+      <Nav NavState={navColor} />
       <Switch>
         <Route exact path='/'>
           <VideoSection />

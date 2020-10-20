@@ -6,6 +6,7 @@
 
 .FeeShow{
     padding:100px 0px 0px 0px;
+    position: relative;
 }
 
 .FeeShowdata{
@@ -49,9 +50,18 @@ i{
     border: 1px solid gainsboro;
 }
 
-@media only screen and (max-width: 450px) {
+.sliderbar{
+    width:100%;
+}
+
+.sliderlabels{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 650px) {
 
     .FeeStructureSection{
         padding:50px 25px;
+        font-size: 12px;
     }   
 }

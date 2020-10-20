@@ -69,7 +69,7 @@
 @media only screen and (max-width: 1050px) {
 
     .HowItWorkSection{
-        padding: 150px 25px;
+        padding: 150px 100px;
         width: 100%;
         height: 100%vw;
     }
@@ -79,12 +79,30 @@
         height: 100%;
     }
 
+    .ImageSet{
+        padding: 0;
+        margin: 0 ;
+        text-align: center;
+        overflow: hidden;
+    }
+    .ImageSet:before{
+        /* width:100%;
+        height: 100%; */
+        top:80px;
+        text-align: center;
+        background-image: url('./blue-circleF.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        opacity: 0.1;        
+        /* overflow: hidden; */
+    }
+
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
 
     .HowItWorkSection{
-
         padding:50px 25px;
     }
 

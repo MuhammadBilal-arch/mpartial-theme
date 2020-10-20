@@ -1,9 +1,9 @@
-.Navbar {
+.Navbar  , .NavbarWhite{
   content: "";
   position: absolute;
   position: fixed;
   top: 0;
-  padding: 0px 120px;
+  padding: 0px 100px;
   width: 100%;
   height: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -14,7 +14,19 @@
   box-sizing: border-box;
 }
 
-.Navbar img {
+.NavbarWhite{
+  background-color: #ffffff;
+}
+
+.NavbarWhite a {
+  color: black;
+}
+.Navbar{
+  background-color: transparent;
+  color: white;
+}
+
+.Navbar img , .NavbarWhite img{
   padding: 15px 0px;
   width: 200px;
   cursor: pointer;
@@ -28,8 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
-  /* background-color: red; */
+  font-size: 12px;
 }
 
 .Navbutton {
@@ -38,7 +49,7 @@
   outline: none;
   border: none;
   color: white;
-  width: 90px;
+  width: 70px;
   height: 32px;
   transition: 0.5s;
   text-align: center;
@@ -65,8 +76,8 @@
 }
 
 
-@media only screen and (max-width: 1050px) {
-  .Navbar {
+@media only screen and (max-width: 1100px) {
+  .Navbar ,.NavbarWhite{
     padding: 0 20px;
     }
   .showUL {
@@ -81,13 +92,11 @@
     position: fixed;
     left: 0;
     top:60px;
-    /* margin-top: 60px; */
     display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
     width: 100%;
-    /* height: 100%; */
     z-index: 100;
   }
   .showMenu li{
@@ -106,7 +115,7 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .Navbar {
+  .Navbar ,.NavbarWhite {
     padding: 0 80px 0 20px;
     }
   }

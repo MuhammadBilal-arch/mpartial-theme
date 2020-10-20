@@ -1,0 +1,39 @@
+.Tips{
+    position: absolute;
+    left:-110px;
+    top:-155px;
+    right: 0;
+    width:250px;
+    height:auto;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    z-index: 10;
+    padding: 10px 10px 25px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.Tips:before{
+    content: '';
+    position: absolute;
+    left: 105px;
+    top: 118px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 6;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .Tips{
+        width: 200px;
+        top:-200px;
+    }
+    .Tips:before{
+        top:170px;
+    }
+}
